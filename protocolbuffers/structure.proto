@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message Struct {
+    int32 identifier = 1;
+    int32 randomvalue = 2;
+    float timestamp = 3;
+}
