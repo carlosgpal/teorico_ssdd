@@ -4,4 +4,14 @@ message Struct {
     int32 identifier = 1;
     int32 randomvalue = 2;
     float timestamp = 3;
+
+
+    enum Calificacion {
+    Suspenso = 0;
+    Aprobado = 1;
+    Notable = 2;
+    Sobresaliente = 3;
+  }
+
+    Calificacion type = 4;
 }

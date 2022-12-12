@@ -8,9 +8,11 @@ import structure_pb2
 idCounter=0
 while 1:
     structure = structure_pb2.Struct()
-    structure.identifier = idCounter
-    structure.randomvalue = random.randint(20, 40)
+    structure.identifier = idCounter+1
+    structure.randomvalue = random.randint(20, 100)
     structure.timestamp = time.time()
+    structure.type = 2
+    
     topack=structure
     print('Data before packing:\n',topack,'\n')
     pack = topack.SerializeToString()
